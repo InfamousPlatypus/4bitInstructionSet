@@ -1,0 +1,20 @@
+Number,Name,Type,Description
+0,OK,Core,Status flag for successful operation
+1,NOK,Core,Status flag for unsuccessful operation
+2,loadd,Core,Read register as data
+3,loadp,Core,Read register as program
+4,uload,Core,Write loaded value to register
+5,not,Core,Invert contents of register
+6,or,Core,Bitwise OR on two or more registers
+7,and,Core,Bitwise AND on two or more registers
+8,cp,Core,Copy from one register to another
+9,nop,Core,No operation
+10,lshift,Core,Shift register left with wraparound
+11,rshift,Core,Shift register right with wraparound
+12,ror,Core,OR on rightmost bits
+13,rand,Core,AND on rightmost bits
+14,rnot,Core,NOT on last bit
+,nand,Computed,NAND using and + not
+,rxor,Computed,Rightmost bit XOR using rand and ror
+,radder,Computed,Rightmost bit full adder using rxor, rand, ror
+,add,Computed,4-bit adder using radder, rshift, uload
